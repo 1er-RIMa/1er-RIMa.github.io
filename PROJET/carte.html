@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1er RIMa - Carte</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <img src="assets/img/logo-rima1.png" alt="Logo 1er RIMa" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                    <li><a href="presentation.html"><i class="fas fa-info-circle"></i> Présentation</a></li>
+                    <li><a href="materiel.html"><i class="fa-solid fa-gears"></i> Matériel</a></li>
+                    <li><a href="carte.html" class="active"><i class="fas fa-map-marked-alt"></i> Carte</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="actualites.html"><i class="fas fa-newspaper"></i> Actualités</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section principale avec carte interactive du quartier militaire et légende -->
+        <section class="page-header">
+            <h1>Carte du Quartier Fayolle</h1>
+            <p>Explorez les différentes zones du quartier militaire.</p>
+        </section>
+
+        <section class="map-controls">
+            <div class="legend">
+                <h3>Légende</h3>
+                <ul>
+                    <li><span class="legend-color casernement"></span> Casernement</li>
+                    <li><span class="legend-color entrainement"></span> Zone d'entraînement</li>
+                    <li><span class="legend-color garage"></span> Garage véhicules</li>
+                    <li><span class="legend-color pc"></span> PC commandement</li>
+                </ul>
+            </div>
+            <!-- Bouton pour changer la vue de la carte (ex: satellite, plan) -->
+            <div class="map-options">
+                <button id="toggle-view" class="btn btn-secondary">Changer de vue</button>
+            </div>
+        </section>
+
+        <section class="interactive-map">
+            <div id="map"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - 1er RIMa - Tous droits réservés</p>
+    </footer>
+    <!-- Script pour la carte interactive avec Leaflet.js -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="assets/js/carte.js"></script>
+</body>
+
+</html>

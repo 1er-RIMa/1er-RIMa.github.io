@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1er RIMa - Accueil</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- En-tête avec logo et navigation -->
+     
+    <header>
+        <div class="header-content">
+            <img src="assets/img/logo-rima1.png" alt="Logo 1er RIMa" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Accueil</a></li>
+                    <li><a href="presentation.html"><i class="fas fa-info-circle"></i> Présentation</a></li>
+                    <li><a href="materiel.html"><i class="fa-solid fa-gears"></i> Matériel</a></li>
+                    <li><a href="carte.html"><i class="fas fa-map-marked-alt"></i> Carte</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="actualites.html"><i class="fas fa-newspaper"></i> Actualités</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Slider d'images avec icones pour naviguer -->
+    <div class="slider">
+        <div class="slide active" style="background-image: url('assets/img/slide1.jpg');"></div>
+        <div class="slide" style="background-image: url('assets/img/slide2.jpg');"></div>
+        <div class="slide" style="background-image: url('assets/img/slide3.jpg');"></div>
+        <button class="slide-btn prev"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="slide-btn next"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+    <!-- Section principale avec mission, stats et actualités -->
+    <main>
+        <section class="hero">
+            <h1>1er Régiment d’Infanterie de Marine</h1>
+            <p id="mission" class="hidden">
+                Le 1er RIMa constitue un outil de combat puissant et performant, qualifié pour toutes les missions de
+                combat blindé ou de renseignement.
+                La vocation opérationnelle du 1er RIMa est tournée vers la projection d’urgence et l’engagement
+                outre-mer.
+            </p>
+            <button id="show-mission" class="btn btn-primary">Voir la mission <i
+                    class="fas fa-chevron-down"></i></button>
+        </section>
+
+        <section class="stats">
+            <h2>Résumé</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>1822</h3>
+                    <p>Date de création</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <h3>+1200</h3>
+                    <p>Soldats</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-globe-americas"></i>
+                    <h3>Monde</h3>
+                    <p>Projection internationale</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="news-preview">
+            <h2>Dernières actualités</h2>
+            <div id="last-news"></div>
+            <a href="actualites.html" class="btn btn-secondary">Voir toutes les actualités</a>
+        </section>
+    </main>
+    <!-- Pied de page avec copyright et réseaux sociaux -->
+    <footer>
+        <p>&copy; 2026 - 1er RIMa - Tous droits réservés</p>
+        <div class="social">
+            <a
+                href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.facebook.com/1rima.angouleme/%3Flocale%3Dfr_FR&ved=2ahUKEwiPndibvpyTAxVGTKQEHWU3MF8QFnoECCgQAQ&usg=AOvVaw1VVlHI4tHIR2O_pkS5MPee"><i
+                    class="fab fa-facebook"></i></a>
+            <a
+                href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.instagram.com/1errima/&ved=2ahUKEwiNsKC7vpyTAxV7UaQEHWPlEs4QFnoECB0QAQ&usg=AOvVaw0V8v_R252Jy3zpr_zFeJng"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://www.sengager.fr/tous-nos-regiments/1er-regiment-dinfanterie-de-marine"><i
+                    class="fa-brands fa-google"></i></a>
+
+        </div>
+    </footer>
+    <!-- Script pour le slider, les actualités et la mission -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/news.js"></script>
+</body>
+
+</html>
