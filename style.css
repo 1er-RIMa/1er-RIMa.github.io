@@ -1,0 +1,173 @@
+/* Styles généraux */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* En-tête */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+.logo img {
+  max-height: 50px;
+}
+
+/* Contenu principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+h1,
+h2,
+h3 {
+  color: #333;
+}
+
+/* Page d'accueil */
+.hero {
+  background-image: url('hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero .logo img {
+  max-height: 100px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.cta-buttons .btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-buttons .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Page "Présentation de l'unité" */
+.unit-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.info-item {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.info-item h3 {
+  margin-top: 0;
+}
+
+/* Page "Carte simplifiée" */
+.map-container {
+  position: relative;
+}
+
+.map-container img {
+  width: 100%;
+  height: auto;
+}
+
+#map-info {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* Formulaire de contact */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Actualités */
+#add-news-form .form-group {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+#add-news-form button {
+  flex-shrink: 0;
+}
+
+/* Pied de page */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
