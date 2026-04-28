@@ -187,7 +187,7 @@ main {
 /* Styles pour les valeurs dans les cartes de statistiques */
 .slider {
     position: relative;
-    height: 400px;
+    height: 600px;
     overflow: hidden;
     margin-bottom: 2rem;
     border-radius: 8px;
